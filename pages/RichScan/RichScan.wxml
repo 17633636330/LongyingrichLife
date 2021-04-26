@@ -1,0 +1,1 @@
+<van-button bindtap='getScancode' type="danger" size='large'>扫一扫</van-button>

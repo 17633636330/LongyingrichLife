@@ -1,0 +1,13 @@
+<view class="img-title" data-click="price" catchtap="isimg"> <label class="xin">*</label> 价格 <label class="xin">（必填项）</label> <image wx:if='{{isshowprice}}' class="downicon"
+    src="../../images/sel-xz.png"></image>
+  <image wx:else class="downicon" src="../../images/up.png"></image>
+</view>
+<view class="content" wx:if="{{isshowprice}}" animation="{{slide_up1}}">
+  <view class="price-title">
+    <input bindinput='blue' placeholder="线上价格" class="priceInput" type="number" model:value='{{onlinePrice}}' />
+  </view>
+  <view class="price-title">
+    <input bindinput='blue2' class="priceInput" placeholder="线下价格(不得虚报)"  type="number" model:value='{{price}}'
+      data-text="price" />
+  </view>
+</view>

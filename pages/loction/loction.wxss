@@ -1,0 +1,4 @@
+/* pages/loction/loction.wxss */
+.fixed{
+  position: fixed;
+}

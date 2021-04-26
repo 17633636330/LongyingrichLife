@@ -1,0 +1,8 @@
+<van-cell-group>
+  <van-field  model:value="{{ shopPhone }}" clearable label="电话:" placeholder="请输入联系方式" bind:click-icon="onClickIcon" />
+</van-cell-group>
+<view class="text margin-top">
+  <!-- <van-button type="default" class='button' size='small' bindtap='comfire'>确认</van-button> -->
+  <button class='button' bindtap='_comfires'> 确认</button>
+</view>
+<van-notify id="van-notify" />

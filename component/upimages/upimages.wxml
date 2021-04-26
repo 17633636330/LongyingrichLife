@@ -1,0 +1,43 @@
+<view catchtap="showimg">
+  <view class="img-title" catchtap="isimg">详情图
+    <image wx:if='{{!isImg}}' class="downicon" src="../../images/sel-xz.png"></image>
+    <image wx:else class="downicon" src="../../images/up.png"></image>
+  </view>
+  <view class="content" id="upimg" wx:if="{{cardIsshow}}" animation="{{slide_up1}}">
+    <view class="up-img" wx:if="{{cardIsshow}}" >
+      <!-- <view>详情图：</view> -->
+      <view class="up-img-content">
+        <view class="upbutton2" wx:for="{{img}}" v-key='index'>
+          <image src="{{item.path}}" bindtap="showIcon" bindlongpress='longpress' data-src="{{item}}">
+            <mp-icon data-index="{{index}}" wx:if="{{item.issize}}" icon="error" color="red"
+              size="{{30}}" class="error"></mp-icon>
+            <mp-icon data-index="{{index}}" catchtap='delete' wx:if="{{iconIsShow}}" icon="close2" color="white"
+              size="{{25}}" class="close"></mp-icon>
+          </image>
+        </view>
+        <view class="upbutton " bindtap='up' wx:if="{{cont6}}">
+          <image class="cloub" src="../../images/cloub.png"></image>
+        </view>
+      </view>
+
+    </view>
+    <view class="img-font">
+      <view class="addwrite">提示：</view>
+      <view>
+        详情图第一张会默认在主页展示，建议第一张使用高质量图片；
+      </view>
+      <view class="addwrite">
+        详情图数量：
+      </view>
+      <view>
+        ≤6张;大小:≤100k
+      </view>
+      <view class="addwrite">
+        尺寸：
+      </view>
+      <view>
+        建议最佳宽高720*340≤尺寸≤1080*510,支持JPG、PNG等；
+      </view>
+    </view>
+  </view>
+</view>

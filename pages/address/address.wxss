@@ -1,0 +1,37 @@
+/* pages/address/address.wxss */
+.fixed {
+  display: flex;
+}
+
+.text {
+  text-align: center;
+
+}
+
+.margin-top {
+  margin-top: 60rpx;
+}
+
+.button {
+  width: 150rpx;
+  height: 70rpx;
+  font-size: 26rpx;
+  color: #2e2a2a;
+  background: #ffe489;
+  border: none;
+}
+
+.van-cell {
+  align-items: center;
+}
+
+.van-cell-text {
+  display: flex;
+  align-items: center;
+  margin-right: 20rpx;
+}
+
+.van-cell-text~view {
+  display: flex;
+  align-items: center;
+}

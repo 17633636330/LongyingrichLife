@@ -1,0 +1,15 @@
+<view class="text">
+  <van-image round width="120rpx" height="120rpx" src="https://img.yzcdn.cn/vant/cat.jpeg" />
+</view>
+<van-cell-group>
+  <van-cell  is-link title="店铺名称:" model:value='{{name}}' bind:click='_shopName' />
+  <van-cell  is-link title="电话：" model:value='{{phone}}' bind:click='_shopPhone' />
+  <van-cell  is-link title="营业时间：" model:value='{{brgintime}}' bind:click='_brgintime' />
+  <van-cell icon="location-o" is-link title="地址" model:value='{{addr+addr2}}' bind:click='_addr' />
+  <van-cell  is-link title="其他" model:value='{{else}}' bind:click='_else' />
+</van-cell-group>
+<!-- <view class="text margin-top">
+  <van-button type="default" size='small'>确认</van-button>
+</view> -->
+<!-- 在页面内添加对应的节点 -->
+<van-notify id="van-notify" />

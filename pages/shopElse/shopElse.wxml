@@ -1,0 +1,8 @@
+<van-cell-group>
+  <van-field model:value="{{else}}"  clearable label="其他:"  placeholder="请输入其他"
+    bind:click-icon="onClickIcon" />
+</van-cell-group>
+<view class="text margin-top">
+  <!-- <van-button type="default" class='button' size='small' bindtap='comfire'>确认</van-button> -->
+  <button class='button' bindtap='_comfires'> 确认</button>
+</view>

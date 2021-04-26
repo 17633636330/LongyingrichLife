@@ -1,0 +1,46 @@
+/* pages/problem/problem.wxss */
+page {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 20rpx 0 20rpx;
+  /* background-color: rgba(230, 227, 227, 94); */
+}
+
+.content {
+  box-sizing: border-box;
+  padding: 10rpx 10rpx 180rpx 10rpx;
+  margin-top: 48rpx;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 100);
+  line-height: 40rpx;
+  border-radius: 14rpx;
+  border: 1px solid rgba(255, 255, 255, 100);
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.content>view:nth-child(1) {
+
+  line-height: 46rpx;
+
+}
+
+.content>view:nth-child(2) {
+
+  line-height: 40rpx;
+
+}
+
+.content>view:nth-child(3) {
+
+  line-height: 80rpx;
+
+}
+
+.content>view:nth-child(4)>image {
+
+  width: 220rpx;
+  height: 220rpx;
+
+}

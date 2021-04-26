@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "mp-icon": "weui-miniprogram/icon/icon",
+    "screenshot":"../../component/screenshot/screenshot",
+    "van-toast": "/miniprogram_npm/vant-weapp/dist/toast/index"
+  },
+  "navigationBarTitleText": "投诉建议"
+}

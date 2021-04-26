@@ -1,0 +1,14 @@
+<view class='content'>
+  <view>
+    ​请关注微信公众号【富春生活】直接在聊天窗口输入
+  </view>
+  <view>
+    您的问题，客服在线时会为您解答；
+  </view>
+  <view>
+    客服工作时间：9:00~22:00；
+  </view>
+  <view>
+    <image src="http://1.116.21.148/img/%e4%ba%8c%e7%bb%b4%e7%a0%81.png" />
+  </view>
+</view>

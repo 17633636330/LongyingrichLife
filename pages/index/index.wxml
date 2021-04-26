@@ -1,0 +1,39 @@
+<view class="content">
+  <view class="add">
+    <navigator url="../addHotel/addHotel">
+      <view>新增+</view>
+    </navigator>
+  </view>
+  <view>
+    <!-- 选择组 -->
+    <checkbox-group bindchange="alonecheck">
+      <view wx:for="{{arr}}" class="good">
+        <view class="good-main">
+          <checkbox value="{{item.id}}" checked="{{item.checked}}">
+          </checkbox>
+          <navigator url="{{item.url}}" hover-class="none">
+            <view class="good-body">
+              <view class="good-content">
+                <image src="../../{{item.img}}" class="good-img"></image>
+                <view class="imgNear">
+                  <view class="good-title">{{item.title}}</view>
+                  <view>{{item.content}}</view>
+                  <view class="good-text">￥{{item.onlinePrice}}<text class="good-price">￥{{item.price}}</text></view>
+                </view>
+              </view>
+            </view>
+          </navigator>
+        </view>
+        <view class="border-buttom"></view>
+      </view>
+
+    </checkbox-group>
+    <view class="all-check">
+      <view class="all-checkBtn">
+        <checkbox class="check" checked="{{allcheck}}" bindtap="check" />
+        <text>全选</text>
+      </view>
+      <text class="text-color" hidden="{{!orcheck}}">删除</text>
+    </view>
+  </view>
+</view>

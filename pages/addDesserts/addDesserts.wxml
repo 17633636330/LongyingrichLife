@@ -1,0 +1,80 @@
+<view>
+  <!-- 图片 -->
+  <view class="img margin-top">
+    <!-- 上传图片 -->
+    <upImg img="{{img}}" bindtoUpImg="toUpImgs"></upImg>
+  </view>
+  <!-- 价格 -->
+  <view class="price margin-top">
+    <upPrice onlinePrice='{{onlinePrice}}' bindtoprice='toprice' price='{{price}}'></upPrice>
+  </view>
+  <!-- 标题 -->
+  <view class="title margin-top">
+    <upTitle bindtotitle='totitle' title='{{title}}'></upTitle>
+  </view>
+  <!-- 到店套餐-->
+  <view class="base margin-top">
+    <view class="img-title" data-click="到店套餐" catchtap="daodoan">到店套餐<image wx:if='{{isdaodian}}' class="downicon"
+        src="../../images/sel-xz.png"></image>
+      <image wx:else class="downicon" src="../../images/up.png"></image>
+    </view>
+    <view class="content" wx:if="{{isshowbase}}" animation="{{slide_up1}}">
+      <view class="base-content">
+        <input class="baseInput" placeholder="套餐名称（默认为标题）" type="text" model:value='{{sever.severelse}}' />
+      </view>
+      <view class="base-content">
+        <input class="baseInput" placeholder="套餐包含" type="text" model:value='{{sever.severelse}}' />
+      </view>
+
+
+    </view>
+  </view>
+  <!-- 购买须知 -->
+  <view class="seting margin-top">
+    <view class="img-title" data-click="购买须知" catchtap="goumai">购买须知<image wx:if='{{isgoumai}}' class="downicon"
+        src="../../images/sel-xz.png"></image>
+      <image wx:else class="downicon" src="../../images/up.png"></image>
+    </view>
+    <view class="content" wx:if="{{isshowseting}}" animation="{{slide_up2}}">
+      <view class="timePick">
+        <view>有效期：</view>
+        <view wx:if="{{startTime}}" bindtap="pickerShow" class="timePick">
+          {{startTime}}至{{endTime}}
+        </view>
+      </view>
+      <view class="timePick">
+        <view class="tui-picker-name">使用时间：</view>
+        <picker mode="date" value="{{date}}" start="2017-10-01" end="2050-10-08" bindchange="changeDate">
+          <view class="tui-picker-detail">
+            {{date}}
+          </view>
+        </picker>
+      </view>
+      <view class="base-content">
+        <input class="baseInput" placeholder="使用人数" type="text" model:value='{{base.bed}}' />
+      </view>
+    </view>
+
+  </view>
+  <!-- 使用规则 -->
+  <view class="sever margin-top">
+    <view class="img-title" data-click="使用规则" catchtap="guizhe">使用规则<image wx:if='{{isguizhe}}' class="downicon"
+        src="../../images/sel-xz.png"></image>
+      <image wx:else class="downicon" src="../../images/up.png"></image>
+    </view>
+    <view class="content" wx:if="{{isshowsever}}" animation="{{slide_up3}}">
+      <view class="base-content">
+        <input class="baseInput" placeholder="使用规则" type="text" model:value='{{base.bed}}' />
+      </view>
+    </view>
+
+  </view>
+
+
+  <!-- 按钮提交 -->
+  <view class="button">
+    <view>保存并修改</view>
+  </view>
+</view>
+<timePicker pickerShow="{{isPickerShow}}" id="picker" wx:if="{{isPickerRender}}" bind:hidePicker="pickerHide"
+  bind:setPickerTime="setPickerTime" config="{{pickerConfig}}"></timePicker>

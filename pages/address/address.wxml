@@ -1,0 +1,16 @@
+<van-cell is-link url='../loction/loction'>
+  <view slot="title" class="fixed">
+    <view class="van-cell-text fixed">店铺地址:
+      <van-icon wx:if="{{address==''}}" color='#ffe489' name="location" />
+      <view wx:if="{{address==''}}" class="van-cell-text">点击选择</view>
+    </view>
+    <view>{{address}}</view>
+  </view>
+</van-cell>
+<van-field model:value="{{userdoor}}" clearable label="门牌号：" placeholder="详细地址，例：100弄 22号"
+  bind:click-icon="onClickIcon" />
+<view class="text margin-top">
+  <!-- <van-button type="default" class='button' size='small' bindtap='comfire'>确认</van-button> -->
+  <button class='button' bindtap='comfire'> 确认</button>
+</view>
+<van-notify id="van-notify" />

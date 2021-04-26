@@ -1,0 +1,127 @@
+page {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 20rpx 0 20rpx;
+  /* background-color: rgba(230, 227, 227, 94); */
+}
+
+.content {
+  font-size: 24rpx;
+  box-sizing: border-box;
+  padding: 15rpx 10rpx 85rpx 10rpx;
+  margin-top: 20rpx;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 100);
+  line-height: 40rpx;
+  border-radius: 14rpx;
+  border: 1px solid rgba(255, 255, 255, 100);
+}
+
+.describe {
+  font-size: 28rpx;
+  color: #101010 10000%;
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 30rpx;
+  justify-content: space-around;
+}
+
+/* 问题建议 */
+.describe textarea {
+  width: 442rpx;
+  height: 200rpx;
+  border: 1px solid rgba(187, 187, 187, 100);
+  border-radius: 8rpx;
+}
+
+.describe view {
+  width: 221.72rpx;
+  text-align: right;
+}
+
+/* 联系方式 */
+.contact {
+  font-size: 28rpx;
+  color: #101010 10000%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30rpx;
+}
+
+.contact view {
+  width: 221.72rpx;
+  text-align: right;
+}
+
+.contact input {
+  width: 442rpx;
+  border: 1px solid rgba(187, 187, 187, 100);
+  border-radius: 8rpx;
+}
+
+/* 开始时间 */
+.start {
+  font-size: 28rpx;
+  color: #101010 10000%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  margin-top:30rpx;
+}
+
+.start view:nth-child(1) {
+  width: 221.72rpx;
+  text-align: right;
+}
+
+.start view:nth-child(2) {
+  width: 442rpx;
+
+}
+
+.start view:nth-child(2) .section {
+  width: 221rpx;
+  border: 1px solid rgba(187, 187, 187, 100);
+  border-radius: 8rpx;
+  color: #BBBBBB;
+
+}
+
+picker {
+  display: flex;
+  justify-content: center;
+  text-align: center !important;
+}
+
+.affirm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50rpx;
+}
+
+.affirm view {
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  background-color: #EA791F;
+  color: #ffffff;
+  border-radius: 14rpx;
+}
+.attention{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30rpx 10rpx 30rpx 10rpx;
+}
+.attention view:nth-child(1){
+  line-height: 50rpx;
+  color: #EA791F;
+  text-indent:2em;
+}
+.attention view:nth-child(2){
+  
+  text-indent:4em;
+}

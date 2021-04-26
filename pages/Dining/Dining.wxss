@@ -1,0 +1,2 @@
+/* pages/orderDetails/orderDetails.wxss */
+@import '../addHotel/addHotel.wxss';

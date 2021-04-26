@@ -1,0 +1,20 @@
+<view class='content'>
+  <!-- 问题1 -->
+  <view class="problem-title">
+    1、图片无法上传怎么办？
+  </view>
+  <view class="problem">
+    <view>①请检查是否图片数量上传上限</view>
+    <view>②请检查图片大小是否符合规范</view>
+    <view>③请检查图片尺寸是否符合规范</view>
+  </view>
+  <!-- 问题2 -->
+  <view class="problem-title">
+    2、扫码核销失败？
+  </view>
+  <view class="problem">
+    <view>①请在微信小程序内扫码</view>
+    <view>②请检查用户购买商品是否是您发布的商品</view>
+
+  </view>
+</view>

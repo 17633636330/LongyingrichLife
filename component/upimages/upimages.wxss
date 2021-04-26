@@ -1,0 +1,263 @@
+/* pages/orderDetails/orderDetails.wxss */
+page {
+  width: 100%;
+  height: 100%;
+  /* background-color: #e1e3e6; */
+  box-sizing: border-box;
+  padding: 40rpx;
+  padding-top: 10rpx;
+  font-size: 28rpx;
+}
+
+.img-title {
+  font-weight: 600;
+  color: #313131;
+  /* margin-top: 15rpx; */
+  font-size: 32rpx;
+  text-align: center;
+}
+
+.upbutton {
+  margin: 12rpx;
+  width: 162rpx;
+  height: 162rpx;
+  text-align: center;
+  line-height: 162rpx;
+  border-radius: 8px;
+  background-color: rgb(187, 187, 187);
+  /* border: 1px solid rgb(187, 187, 187); */
+  vertical-align: text-bottom;
+  /* margin-top: 10rpx; */
+}
+
+.upbutton2 {
+  text-align: center;
+  line-height: 50rpx;
+  margin-left: 5rpx;
+  margin-top: 10rpx;
+  vertical-align: text-bottom;
+}
+
+
+
+.content {
+  width: 100%;
+  box-sizing: border-box;
+  /* height: 254rpx; */
+  background-color: white;
+  border-radius: 15rpx;
+  margin-top: 15rpx;
+  padding: 20rpx;
+  padding-top: 15rpx;
+}
+
+.downicon {
+  width: 30rpx;
+  height: 30rpx;
+  /* margin-left: 15rpx; */
+  vertical-align: middle;
+}
+
+
+.up-img {
+  display: flex;
+  line-height: 120rpx;
+  /* align-items: center; */
+  justify-content: center;
+  /* margin-top: 20rpx; */
+}
+
+.up-img image {
+  box-sizing: border-box;
+  /* padding: 5rpx; */
+  margin-right: 15rpx;
+  width: 162rpx;
+  height: 162rpx;
+  position: relative;
+  border-radius: 8px;
+}
+
+.up-img-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* width: 498rpx; */
+}
+
+.addicon {
+  margin-left: 40rpx;
+}
+
+.cloub {
+  width: 118rpx !important;
+  height: 118rpx !important;
+  vertical-align: middle;
+  margin-right: 0 !important;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  left: 100rpx;
+  margin-top: 5rpx;
+  z-index: 999;
+}
+.error {
+  position: absolute;
+  top: 0;
+  left: 48rpx;
+  margin-top: 48rpx;
+  z-index: 988;
+}
+.addwrite{
+  font-weight: 600;
+}
+.addwrite~.addwrite{
+  margin-top:15rpx;
+}
+.img-font {
+  text-align: center;
+  font-size: 28rpx;
+  color: #ffb687;
+  margin-top: 12rpx;
+}
+
+/* 价格 */
+/* .price{
+  width: 100%;
+} */
+.price-content {
+  margin-top: 12rpx;
+  /* width: 100%; */
+}
+
+.price-title {
+  margin-top: 12rpx;
+  width: 100%;
+  /* text-align: right; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.price-title view:nth-child(1) {
+  width: 228rpx;
+  text-align: right;
+}
+
+.priceInput {
+  border-bottom: 1px solid #101010;
+  width: 210rpx;
+}
+
+.pricealt {
+  font-size: 26rpx;
+  color: red;
+  margin-right: 10rpx;
+}
+
+.title-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.title-title>view:nth-child(1) {
+  width: 124rpx;
+}
+
+.titleInput {
+  width: 360rpx;
+  border-bottom: 1px solid #101010;
+}
+
+.titlealt {
+  font-size: 26rpx;
+  color: red;
+  margin-right: 10rpx;
+}
+
+/* 基础信息 */
+.base-content {
+  background-color: #E1E3E6;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 13rpx;
+}
+
+.base-content>view:nth-child(1) {
+  width: 236rpx;
+  text-align: right;
+}
+
+.base-content>view:nth-child(3) {
+  width: 236rpx;
+  text-align: right;
+}
+
+.baseInput {
+  width: 360rpx;
+  border-bottom: 1px solid #101010;
+}
+
+checkbox .wx-checkbox-input {
+  /* 自定义样式.... */
+  height: 20rpx !important;
+  width: 40rpx !important;
+  margin-top: -4rpx;
+  border-radius: 0 !important;
+  border: 2rpx solid #999;
+  background: transparent;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  /* border: none; */
+  border: 2rpx solid #999;
+  background: white;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  border-radius: 0;
+  width: 40rpx;
+  /* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 18rpx;
+  /* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 18rpx;
+  text-align: center;
+  font-size: 30rpx;
+  /* 对勾大小 30rpx */
+  color: black;
+  /* 对勾颜色 白色 */
+  background: white;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+/* 注意 */
+.attention {
+  width: 357rpx;
+  border-bottom: 2px solid #a5a1a1;
+}
+
+/* 按钮 */
+.button>view {
+  box-sizing: border-box;
+  padding: 10rpx;
+  width: 184.68rpx;
+  text-align: center;
+  /* height: 33.88rpx; */
+  line-height: 33.88rpx;
+  color: #ffffff;
+  background-color: #EA791f;
+  border-radius: 13rpx;
+}
+
+.button {
+  margin-top: 20rpx;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

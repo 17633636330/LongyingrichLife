@@ -1,0 +1,2 @@
+/* pages/shopElse/shopElse.wxss */
+@import '../address/address.wxss'

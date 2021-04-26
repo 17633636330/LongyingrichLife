@@ -1,0 +1,17 @@
+<view class="up-img">
+  <view class="details">上传截图: </view>
+  <view class="imgPlace">
+    <view class="upbutton2" wx:for="{{img}}">
+      <image src="{{item}}" data-index="{{index}}" bindtap="showIcon" class="upbutton2-img">
+        <mp-icon data-index="{{index}}" catchtap='delete' wx:if="{{iconIsShow}}" icon="close2" color="white"
+          size="{{18}}" class="close"></mp-icon>
+      </image>
+    </view>
+    <!-- <view class="upj"> -->
+      <view class="upbutton " bindtap='up' wx:if="{{cont6}}">
+        <image class="cloub" src="../../images/cloub2.png"></image> 上传
+      </view>
+    <!-- </view> -->
+  </view>
+
+</view>

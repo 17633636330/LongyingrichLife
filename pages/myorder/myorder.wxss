@@ -1,0 +1,159 @@
+/* pages/myorder/myorder.wxss */
+/**index.wxss**/
+page {
+  /* background: #f8f8f8; */
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  background-color: rgb(255, 255, 255);
+  box-sizing: border-box;
+  width: 100%;
+  padding-top:20rpx ;
+  padding-bottom: 50rpx;
+}
+
+/* 新增 */
+.add {
+  box-sizing: border-box;
+  padding: 10rpx;
+  padding-top: 20rpx;
+  padding-bottom: 0;
+  padding-right: 20rpx;
+  width: 100%;
+  height: 60rpx;
+  color: #ea791f;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
+
+/* 商品内容 */
+.good-body {
+  width: 600rpx;
+  /* margin-left: 15rpx; */
+  /* border: 2px solid #dedede; */
+}
+
+.good {
+  box-sizing: border-box;
+  position: relative;
+  padding: 23rpx;
+  width: 100%;
+  display: flex;
+}
+
+.imgNear>.good-title {
+  font-size: 38rpx !important;
+  font-weight: 700;
+  margin-bottom: 20rpx;
+}
+
+.good-img {
+  width: 290rpx;
+  height: 201rpx;
+  border-radius: 8rpx;
+}
+
+.good-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.good-price {
+  text-decoration: line-through;
+}
+
+.imgNear {
+  margin-left: 28rpx;
+}
+
+.imgNear>view {
+  /* line-height: 66rpx; */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 26rpx;
+}
+
+.imgNear>view:nth-child(2)>text {
+  color: #101010;
+  margin-left: 30rpx;
+}
+
+/*checkbox 选项框大小  */
+.good checkbox .wx-checkbox-input {
+  width: 28rpx;
+  height: 28rpx;
+  margin-top: 80rpx;
+  /* margin-top: -60rpx; */
+  border-radius: 50%;
+}
+
+checkbox .wx-checkbox-input {
+  width: 28rpx;
+  height: 28rpx;
+
+  /* margin-top: -60rpx; */
+  border-radius: 50%;
+}
+
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #ea791f;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  display: none;
+  /* width: 0rpx;
+  height: 0rpx;
+  line-height: 28rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: ;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1); */
+}
+
+.all-check {
+  width: 100%;
+  height: 80rpx;
+  background: #F8F8F8;
+  padding: 5rpx 32rpx;
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hr {
+  margin-top: 35rpx;
+  border-bottom: 2px solid #e8e8e8;
+}
+
+.all-checkBtn {
+  display: flex;
+  align-items: center;
+}
+
+.order-details {
+  display: flex;
+}
+
+.text-color {
+  color: red;
+}
+
+/* 核销 */
+.verification {
+  width: 64rpx;
+  height: 64rpx;
+  position: absolute;
+  top: -4rpx;
+  right: 75rpx;
+}

@@ -1,0 +1,37 @@
+<view class='content'>
+  <!-- 个人信息 -->
+  <view class="user-head" bindtap="login">
+    <open-data type="userAvatarUrl" ></open-data>
+    <!-- <image wx:else src="../../images/DFI.png" /> -->
+  </view>
+  <view wx:if="{{if_login}}">
+    您还未登录，点击登录呦
+  </view>
+  <!-- 服务列表 -->
+  <view class="serve">
+    <view>
+      <navigator hover-class="hover-a" url="../complaint/complaint" open-type="navigate">
+        <image class="serveImg" src="http://1.116.21.148/img/%e6%8a%95%e8%af%89%e5%bb%ba%e8%ae%ae.png" />
+        <view>投诉建议</view>
+      </navigator>
+    </view>
+    <view>
+      <navigator hover-class="hover-a" url='../problem/problem' open-type="navigate">
+        <image class="serveImg" src="http://1.116.21.148/img/%e5%b8%b8%e8%a7%81%e9%97%ae%e9%a2%98.png" />
+        <view>常见问题</view>
+      </navigator>
+    </view>
+    <view>
+      <navigator hover-class="hover-a" url='../service/service' open-type="navigate">
+        <image class="serveImg" src="http://1.116.21.148/img/%e5%ae%a2%e6%9c%8d.png" />
+        <view>人工客服</view>
+      </navigator>
+    </view>
+    <view>
+      <navigator hover-class="hover-a" url='../setting/setting' open-type="navigate">
+        <image class="serveImg" src="http://1.116.21.148/img/%e8%ae%be%e7%bd%ae.jpg" />
+        <view>设置</view>
+      </navigator>
+    </view>
+  </view>
+</view>

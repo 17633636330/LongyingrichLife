@@ -1,0 +1,83 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/myorder/myorder",
+    "pages/my/my",
+    "pages/logs/logs",
+    "pages/orderDetails/orderDetails",
+    "pages/Dining/Dining",
+    "pages/addHotel/addHotel",
+    "component/upTitle/upTitle",
+    "component/upPrice/upPrice",
+    "pages/problem/problem",
+    "pages/complaint/complaint",
+    "component/screenshot/screenshot",
+    "pages/service/service",
+    "pages/shelvesDetails/shelvesDetails",
+    "pages/addBuffet/addBuffet",
+    "pages/addSnack/addSnack",
+    "pages/Hotpot/Hotpot",
+    "pages/addDesserts/addDesserts",
+    "pages/RichScan/RichScan",
+    "pages/navigator/navigator",
+    "pages/setting/setting",
+    "pages/address/address",
+    "pages/loction/loction",
+    "pages/shopName/shopName",
+    "pages/shopPhone/shopPhone",
+    "pages/businessHours/businessHours",
+    "pages/shopElse/shopElse"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTitleText": "富春生活商家版",
+    "navigationBarTextStyle": "black"
+  },
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#EA791F",
+    "backgroundColor": "#F8f8f8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "货架",
+        "iconPath": "./images/tab1.png",
+        "selectedIconPath": "./images/tab1.png"
+      },
+      {
+        "pagePath": "pages/myorder/myorder",
+        "text": "我的订单",
+        "iconPath": "./images/tab2.png",
+        "selectedIconPath": "./images/tab2.png"
+      },
+      {
+        "pagePath": "pages/RichScan/RichScan",
+        "text": "扫一扫",
+        "iconPath": "./images/shao.png",
+        "selectedIconPath": "./images/shao.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./images/tab3.png",
+        "selectedIconPath": "./images/tab3.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio",
+    "location"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/* pages/setting/setting.wxss */
+.text{
+  text-align: center;
+  
+}
+.margin-top{
+  margin-top: 200rpx;
+}
+.van-cell{
+  align-items: center;
+}

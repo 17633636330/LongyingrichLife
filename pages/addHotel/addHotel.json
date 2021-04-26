@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "mp-icon": "weui-miniprogram/icon/icon",
+    "upImg": "../../component/upimages/upimages",
+    "upTitle": "../../component/upTitle/upTitle",
+    "upPrice": "../../component/upPrice/upPrice"
+  },
+  "navigationBarTitleText": "住宿类新增"
+}

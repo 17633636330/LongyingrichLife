@@ -1,0 +1,17 @@
+/* pages/login/login.wxss */
+.loginBtn {
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 60rpx;
+}
+
+.btn {
+  color: white;
+  width: 200rpx;
+  height: 70rpx;
+  font-size: 26rpx;
+  /* color: #2e2a2a; */
+  background: #07c160;
+  border: none;
+
+}

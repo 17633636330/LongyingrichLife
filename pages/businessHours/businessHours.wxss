@@ -1,0 +1,2 @@
+/* pages/businessHours/businessHours.wxss */
+@import '../address/address.wxss'

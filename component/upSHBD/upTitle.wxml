@@ -1,0 +1,8 @@
+<view class="img-title" data-click="title" catchtap="isimg"> <label class="xin">*</label> 标题<label class="xin">（必填项）</label> <image wx:if='{{isshowtitle}}' class="downicon"
+    src="../../images/sel-xz.png"></image>
+  <image wx:else class="downicon" src="../../images/up.png"></image>
+</view>
+<view class="title-title content" wx:if="{{isshowtitle}}" animation="{{slide_up1}}">
+  <input bindfocus='focus' bindblur='blue' placeholder="套餐名称：10字以内仅为文字和数字" class="titleInput" type="text" model:value='{{title}}' data-text="title" />
+  <!-- <text class="titlealt" wx:if="{{isShowTextTitle}}"></text> -->
+</view>

@@ -1,0 +1,49 @@
+<view class="content">
+  <view class="title">
+    <image class="image" src="../../images/hoteal1.png" />
+    <view>
+      <view class="name">{{name}}</view>
+      <view class="name2">无早餐 20-20㎡</view>
+      <view class="name2">2人入驻 有窗</view>
+      <view class="name3">￥ 198</view>
+    </view>
+    <image wx:if="{{}}" class="verification" src="../../images/verification.png" />
+    <image wx:else class="verification" src="../../images/inverification.png" />
+  </view>
+</view>
+<view class="content details">
+  <view>
+    <view>
+
+      <view class="order-content">
+        <view class='deirt'>
+          <view>订单编号：</view>
+          <view>{{orderId}}</view>
+        </view>
+        <view class='deirt'>
+          <view>下单手机号：</view>
+          <view>{{phone}}</view>
+        </view>
+        <view class='deirt'>
+          <view>付款时间：</view>
+          <view>{{payTime}}</view>
+        </view>
+        <view class='deirt'>
+          <view>订单总价：</view>
+          <view>￥{{totalPrices}}</view>
+        </view>
+
+
+      </view>
+      <view class="top bottom"></view>
+      <view class='deirt1' >
+        <view>实付金额：</view>
+        <view class="deirt1-1"> <text class="deirt1-2"> ￥</text>{{actualPay}}</view>
+      </view>
+    </view>
+    <view class="fixed">
+      <view class="order">温馨提示:</view>
+      <view class="attention">买家已付款订单，请在买家出示订单二维码后扫码验证消费。</view>
+    </view>
+  </view>
+</view>

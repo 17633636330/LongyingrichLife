@@ -1,0 +1,54 @@
+<view class="content">
+  <!-- 问题建议 -->
+  <view class="describe">
+    <view>问题/建议描述： </view>
+    <textarea name="" id="" cols="30" rows="10" placeholder="请描述您的问题或建议，200字以内。"></textarea>
+  </view>
+  <!-- 联系方式 -->
+  <view class="contact">
+    <view>联系方式：</view>
+    <input type="num" />
+  </view>
+  <!--start 时间 -->
+  <view class="start">
+    <view>开始时间： </view>
+    <view>
+      <view class="section">
+        <!-- <view class="section__title">日期选择器</view> -->
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view style="text-align:center" class="picker">
+            请选择{{date}}
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <!-- end时间 -->
+  <view class="start">
+    <view>结束时间： </view>
+    <view>
+      <view class="section">
+        <!-- <view class="section__title">日期选择器</view> -->
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view style="text-align:center" class="picker">
+            请选择 {{date}}
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <!-- 上传截图 -->
+  <screenshot img="{{img}}" bindtoUpImg="toUpImgs"></screenshot>
+  <!-- 确认上传 -->
+  <view class="affirm">
+    <view bindtap="up">
+      确认上传
+    </view>
+  </view>
+  <!-- 注意事项 -->
+  <view class="attention">
+    <view>温馨提示:</view>
+    <view>感谢您的反馈，我们收到反馈后会第一时间安排运营专员跟进您的问题，您的支持是我们不断前行的动力。</view>
+  </view>
+</view>
+<van-toast id="van-toast" />

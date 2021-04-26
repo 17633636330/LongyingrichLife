@@ -1,0 +1,63 @@
+/* pages/my/my.wxss */
+page {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 20rpx 0 20rpx;
+  /* background-color: rgba(230, 227, 227, 94); */
+}
+
+.content {
+  margin-top: 20rpx;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 100);
+  /* height: 181px; */
+  line-height: 40rpx;
+  border-radius: 14rpx;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.user-head {
+  	/* align-items: center; */
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-top: 22rpx;
+}
+.user-head image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.user-head open-date{
+  width: 140rpx;
+  height: 140rpx;
+}
+.content>view:nth-child(2){
+  font-size: 28rpx;
+}
+.content>view:nth-child(3){
+  margin-top: 76rpx;
+}
+.serveImg{
+  height: 60rpx;
+  width: 60rpx;
+}
+.serveImg+view{
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #101010 10000%;
+  width: 120rpx;
+}
+.serve{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 69rpx;
+  display: flex;
+  justify-content: space-around;
+  margin: 64rpx 0;
+}

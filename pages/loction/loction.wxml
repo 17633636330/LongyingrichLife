@@ -1,0 +1,10 @@
+
+  <van-search label="地址" placeholder="请输入搜索关键词" use-action-slot bind:search='confire' bind:change="getsuggest" model:value="{{backfill}}"
+    background="#ffffff">
+  </van-search>
+<view wx:for="{{suggestion}}" wx:key="index">
+  <!--绑定回填事件-->
+  <view>
+    <van-cell center bindtap="backfill" id='{{index}}' title="{{item.title}}" label="{{item.addr}}" />
+  </view>
+</view>
