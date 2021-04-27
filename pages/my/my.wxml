@@ -1,7 +1,7 @@
 <view class='content'>
   <!-- 个人信息 -->
   <view class="user-head" bindtap="login">
-    <open-data type="userAvatarUrl" ></open-data>
+    <open-data type="userAvatarUrl"  ></open-data>
     <!-- <image wx:else src="../../images/DFI.png" /> -->
   </view>
   <view wx:if="{{if_login}}">
